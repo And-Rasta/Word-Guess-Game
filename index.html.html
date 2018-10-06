@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notorious Villains Guessing Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <script src="game.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img id="title-image" src="images/title.jpg" alt="Find The Villain!" />
+        <div class="row">
+            <div class="col-md-6 gameplay-column">
+                <img id="youwin-image" src="images/win.jpg" alt="Winning Image" />
+                <img id="gameover-image" src="images/lose.jpg" alt="Game Over Image" />
+                <h2 id="pressKeyTryAgain">Press any key to Try Again.</h2>
+                <img id="hangmanImage" src="images/" alt="" />
+            </div>
+            <div class="col-md-6 gameplay-column">
+                <h2>Press any key to get started...</h2>
+                <h4>Wins:</h4>
+                <h4 id="totalWins"></h4>
+                <h4>Current Villain:</h4>
+                <h2 id="currentWord"></h2>
+                <h4>Guesses Remaining:</h4>
+                <h4 id="remainingGuesses"></h4>
+                <h4>Letters Guessed:</h4>
+                <h3 id="guessedLetters"></h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        resetGame();
+        updateDisplay();
+    </script>
+
+</body>
+
+</html>
