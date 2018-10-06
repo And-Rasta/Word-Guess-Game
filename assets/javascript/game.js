@@ -56,11 +56,11 @@ var wins = 0;
 
 // Sound Library
 // Intro sound
-var keySound = new Audio('sounds/heartbeat.wav');
+var keySound = new Audio('assets/sounds/heartbeat.wav');
 // Win Sound
-var winSound = new Audio('sounds/laugh.wav');
+var winSound = new Audio('assets/sounds/laugh.wav');
 // Lose Sound
-var loseSound = new Audio('sounds/scream.wav');
+var loseSound = new Audio('assets/sounds/scream.wav');
 
 // Reset our game-level variables
 function resetGame() {
